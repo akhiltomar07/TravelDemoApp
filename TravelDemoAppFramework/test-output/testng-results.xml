@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-29T15:42:04 IST" name="Demo Travel App Test Suite" finished-at="2022-07-29T15:42:49 IST" duration-ms="45412">
+    <groups>
+    </groups>
+    <test started-at="2022-07-29T15:42:04 IST" name="Test" finished-at="2022-07-29T15:42:49 IST" duration-ms="45412">
+      <class name="Tests.TestCase">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.TestCase@783a467b]" started-at="2022-07-29T15:42:04 IST" name="launchApplication" finished-at="2022-07-29T15:42:08 IST" duration-ms="3892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.TestCase@783a467b]" started-at="2022-07-29T15:42:04 IST" name="launchApplication" finished-at="2022-07-29T15:42:08 IST" duration-ms="3935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Tests.TestCase@783a467b]" started-at="2022-07-29T15:42:42 IST" name="launchApplication" finished-at="2022-07-29T15:42:44 IST" duration-ms="2053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+      </class> <!-- Tests.TestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Demo Travel App Test Suite -->
+</testng-results>
