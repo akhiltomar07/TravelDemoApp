@@ -26,16 +26,13 @@ public class TestCase extends TestBase {
 	public void login() throws Throwable
 
 	{
-		// DriverFactory.getInstance().getDriver().get(URL);
-		 //loginPage.validateBrokenLinks();
+		loginPage.validateBrokenLinks();
 		loginPage.login(email, password);
-
 	}
 
 	@Test(priority = 2, description = "Valid Login Functionality for valid user")
 	public void validateUserLogin() throws InterruptedException {
 		loginPage.login(email, password);
-		// Assert.assertTrue(homepage.waitForScreenLoad(), "Home Page was not loaded.");
 		Thread.sleep(1000);
 		Assert.assertTrue(homepage.validateUserLogin());
 
@@ -44,7 +41,6 @@ public class TestCase extends TestBase {
 	@Test(priority = 3, description = "Update User Data")
 	public void updateUserData() throws InterruptedException {
 		loginPage.login(email, password);
-		// Assert.assertTrue(homepage.waitForScreenLoad(), "Home Page was not loaded.");
 		Thread.sleep(1000);
 		Assert.assertTrue(homepage.validateUserLogin());
 

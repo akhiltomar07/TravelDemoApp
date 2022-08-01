@@ -33,9 +33,7 @@ public class MyProfile extends TestBase {
 	
 	public void updateProfileInformation() throws InterruptedException
 	{
-		
-	//	wait.until(ExpectedConditions.visibilityOf(element));
-		//DriverFactory.getInstance().getDriver().findElement(First_Name).clear();
+	
 		Thread.sleep(2000);
 		DriverFactory.getInstance().getDriver().findElement(First_Name).clear();
 		sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(First_Name), "FirstName", "Akhil");

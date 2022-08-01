@@ -28,7 +28,6 @@ public class HomePage extends TestBase {
 		boolean flag = false;
 		String userName = DriverFactory.getInstance().getDriver().findElement(USER_NAME).getText();
 		String welcomMessageText = DriverFactory.getInstance().getDriver().findElement(welcomeMessage).getText();
-		// Thread.sleep(3000);
 		if (welcomMessageText.equalsIgnoreCase("Hi, " + userName + " Welcome Back")) {
 			flag = true;
 		}

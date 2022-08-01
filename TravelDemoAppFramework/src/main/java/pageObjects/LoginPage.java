@@ -22,8 +22,7 @@ public class LoginPage extends TestBase {
 	By PASSWORD = By.xpath("//input[@placeholder='Password']");
 	By LOGIN_BTN = By.xpath("//span[text()='Login']");
 
-	// login to App
-	
+
 	  public void login(String email, String password) {
 	  sendKeys_custom(DriverFactory.getInstance().getDriver().findElement(EMAIL),
 	  "LoginEmailFIeld", email);
@@ -35,7 +34,6 @@ public class LoginPage extends TestBase {
 	  
 	  }
 	 
-
 	public void validateBrokenLinks() throws IOException {
 		List<WebElement> links = DriverFactory.getInstance().getDriver().findElements(By.tagName("a"));
 		System.out.println(links.size());
@@ -43,17 +41,12 @@ public class LoginPage extends TestBase {
 		// create a List to add url that have href attribute
 		List<String> urlList = new ArrayList<String>();
 
-		// check one by one and find all links that have attribute value as "href" and
-		// pass URLs to checkBrokenLink method to check whether status code is 400 or
-		// not?
 		for (WebElement e : links) {
 			String url = e.getAttribute("href");
 			urlList.add(url);
-			// checkBrokenLink(url);
 		}
 
 		urlList.parallelStream().forEach(e -> checkBrokenLinkForAllUrls(e));
-
 	}
 
 	// to validate broken link using response code 400

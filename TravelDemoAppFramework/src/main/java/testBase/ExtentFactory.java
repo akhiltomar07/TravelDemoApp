@@ -16,9 +16,6 @@ public class ExtentFactory {
 		return instance;
 	}
 
-	// -------------------------------------Factory Design pattern----------------------------------------------
-	// define separate factory methods for creating objects and create objects by calling that method
-
 	ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
 
 	// To retrieve the value from hashmap

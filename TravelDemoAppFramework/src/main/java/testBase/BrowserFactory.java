@@ -20,10 +20,9 @@ public class BrowserFactory {
 
 		if (browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options =new ChromeOptions();//ChromeOptions contains various setting of browser
-			options.addArguments("--incognito");//to run test cases in private mode
+			ChromeOptions options =new ChromeOptions();
+			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
-		//	System.getProperty("webdriver.chrome.SilentOutput", true);
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();

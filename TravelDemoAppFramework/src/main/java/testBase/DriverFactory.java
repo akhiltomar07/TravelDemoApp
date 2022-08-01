@@ -5,16 +5,6 @@ import org.openqa.selenium.WebDriver;
 //to create threadsafe drivers for multiple Threading
 public class DriverFactory {
 
-	// Thread local is a class in java.lang package used for multiple Threading
-	// To execute parallel test cases we use threadlocal class to makesure other
-	// thread does not interact with each other
-
-	// Design Pattern --> Represent best practices
-	// Singleton design pattern
-	// factory design pattern
-
-	// Singleton pattern
-	// private constructor so that on one can create pbject of this class
 	private DriverFactory() {
 	}
 	
@@ -24,9 +14,7 @@ public class DriverFactory {
 		return instance;
 	}
 
-	// -------------------------------------Factory Design pattern----------------------------------------------
-	// define separate factory methods for creating objects and create objects by calling that method
-
+	
 	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	// To retrieve the value from hashmap

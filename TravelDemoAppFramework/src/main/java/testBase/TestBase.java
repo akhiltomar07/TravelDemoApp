@@ -30,9 +30,7 @@ public class TestBase extends ActionEngine {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.navigate().to(url);
-		
-		
-		
+
 	}
 	
 
