@@ -2,7 +2,8 @@
 ## Prerequisites
 Java 8, TestNG
 ### About Project
-This Travel Demo  project is written in Selenium and will serve an example of implementing a Selenium test project with JAVA and TestNG(7.5)
+This Framework is a ThreadSafe and can be used for parrallel execution. Travel Demo  project is written in Selenium and will serve an example of implementing a Selenium test project with JAVA and TestNG(7.5)
+
 ### Implemented browsers-
 This project will run on Chrome, Firefox, Internet Explorer, Firefox
 ### TestNG Annotations
